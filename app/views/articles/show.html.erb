@@ -1,4 +1,8 @@
-<h1>Showing selected article</h1>
+<h1>Showing selected article: <%= params[:id] %></h1>
 <p>Title: <%= @article.title %>. </p>
 <p>Description: <%=@article.description %>.</p>
-<p>Description: <%=@article.created_at %>.</p>
+<p>Created at: <%=@article.created_at %>.</p>
+
+<%= link_to 'Home', root_path %>
+<%= link_to 'Articles', articles_path %>
+<%= link_to 'Edit', edit_article_path(params[:id]) %>
