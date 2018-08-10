@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'new', to: 'articles#new'
-  # get 'delete', to: 'articles#delete' # Work in progress
   
   resources :articles
 end

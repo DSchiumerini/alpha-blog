@@ -1,7 +1,7 @@
 <h1>All articles</h1>
 
-
-<p><%= link_to 'Create Article', new_path %></p>
+<p><%= link_to 'Home', root_path %> | 
+<%= link_to 'Create Article', new_path %></p>
 
 <table>
    <tr>
@@ -19,9 +19,7 @@
         <th><%= element.description %></th>
         <th><%= element.created_at %></th>
         <th><%= link_to 'Edit', edit_article_path(element.id) %></th>
+        <th><%= link_to 'Delete', article_path(element.id), method: :delete, data: {confirm: "Are you"} %></th>
     </tr>
     <% end %>
 </table>
-
-
-<p><%= link_to 'Home', root_path %></p>
