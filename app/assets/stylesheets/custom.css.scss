@@ -1,3 +1,24 @@
+$navbar-default-bg: lime;
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#navbar-logo {
+    float: left;
+    font-size: 1.7em;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#navbar-create-link{
+    color: #000000;
+    font-weight: bold;
+}
+
+#navbar-view-link{
+    color: #000000;
+    font-weight: bold;
+}
