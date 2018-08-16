@@ -4,7 +4,7 @@ $navbar-default-bg: lime;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#navbar-logo {
+#navbar-logo{
     float: left;
     font-size: 1.7em;
     color: #000000;
@@ -21,4 +21,14 @@ $navbar-default-bg: lime;
 #navbar-view-link{
     color: #000000;
     font-weight: bold;
+}
+
+#articles-table{
+    border: 5px solid lime;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.center{
+    text-align: center;
 }
