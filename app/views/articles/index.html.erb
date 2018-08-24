@@ -12,6 +12,12 @@
                     </div>
                     <div class="article-body">
                         <strong>Description: </strong><%= element.description %>
+                        <br>
+                        <% if defined? element.user.username %>
+                            <strong>Author: </strong><%= element.user.username %>
+                        <% else %>
+                            <strong>Author: </strong> Anonymous
+                        <% end %>
                     </div>
                     <div class="article-created-on">
                         <strong>Created on: </strong><%= element.created_at %>

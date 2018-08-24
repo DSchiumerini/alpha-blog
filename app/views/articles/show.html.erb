@@ -1,6 +1,11 @@
 <div class="well col-xs-8 col-xs-offset-2">
     <h4 class="center"><strong>Showing selected article: <%= params[:id] %></strong></h4>
     <hr><strong>Title: </strong><%= @article.title %>
+    <hr><% if defined? element.user.username %>
+        <strong>Author: </strong><%= element.user.username %>
+    <% else %>
+        <strong>Author: </strong> Anonymous
+    <% end %>
     <hr><strong>Description: </strong><%=@article.description %>
     <hr><strong>Created on: </strong><%=@article.created_at %>
 <div class="article-actions" align="right">
@@ -12,4 +17,3 @@
 </div>
     
 </div>
-
