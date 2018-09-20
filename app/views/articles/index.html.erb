@@ -15,9 +15,9 @@
                     </div>
                     <div class="articles-actions">
                         <% if defined? element.user.username %>
-                            <small>Author: <%= element.user.username %>, created on: <%= element.created_at %></small>
+                            <small>Author: <%= element.user.username %>, created on: <%= element.created_at %> (<%= time_ago_in_words(element.created_at) %> ago)</small>
                         <% else %>
-                            <small>Author: Anonymous, created on: <%= element.created_at %></small> 
+                            <small>Author: Anonymous, created on: <%= element.created_at %> (<%= time_ago_in_words(element.created_at) %> ago)</small>
                         <% end %>
                         <%= link_to 'Edit', edit_article_path(element.id), class: "btn-xs btn-warning" %>
                         <%= link_to 'Delete', article_path(element.id), method: :delete, 
